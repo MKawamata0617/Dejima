@@ -1,0 +1,38 @@
+.login-bg {
+    background-image:url(../images/bg_1.png);
+    min-width: 100vh;
+    min-height: 100vh;
+}
+
+.login-bg {
+    position:relative;
+    }
+    
+.login-container {
+    background: #000;
+    border: 8px solid #FFF;
+    border-radius: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 5% 5%;
+}
+.login-container {
+    position: relative;
+    top: 160px;
+}
+
+.form-group.row.login{
+    margin: 20px 0;
+}
+.form-group.row.login:last-child{
+    margin-bottom: 0;
+}
+
+.login button {
+    font-size: 1rem;
+    padding: 5px 2px;
+    background: rgb(66, 66, 66);
+    color: #fff;
+    border-radius: 5px;
+    font-family: PixelMplus10,sans-serif;
+}
