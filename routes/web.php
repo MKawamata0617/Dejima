@@ -26,3 +26,5 @@ Auth::user();
 Auth::id();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'welcome'])->name('home');
+
+Route::resource('book', BookController::class);
