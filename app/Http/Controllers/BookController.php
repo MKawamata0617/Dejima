@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Http\Controllers\BoolController;
+use App\Http\Controllers\BookController;
 
 class BookController extends Controller
 {
