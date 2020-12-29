@@ -1,0 +1,74 @@
+@font-face {
+	font-family: 'MyFont';
+	src: url(font/PixelMplus10-Bold.ttf);
+}
+
+body {
+    font-family: MyFont;
+    color: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    height: 100%;
+    background: black; 
+}
+
+#main_container{
+    height: 80%;
+    max-width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+}
+
+#character_image{
+    height: 80%;
+    width: 50%;
+    background-color: black;
+    border: 3px solid white;
+    margin: -3px;
+    border-radius: 8px;
+}
+
+.status_container{
+    height: 80%;
+    width: 50%;
+    background-color: black;
+    border: 3px solid white;
+    margin: -3px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /*ここからフォントの効果*/
+    text-align: center;
+    letter-spacing: 8px;
+    font-size: 24px;
+}
+
+.contents{
+    margin: 10px 0 10px 0;
+}
+
+#profile{
+    background-color: black;
+    margin: auto;
+    margin-top:-3%;
+    width: 100%;
+    max-width: 80%;
+    height: 20%;
+    border: 3px solid white;
+    border-radius: 8px;
+    letter-spacing: 8px;
+    font-size: 24px;
+    padding: 5px;
+}
+

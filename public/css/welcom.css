@@ -1,0 +1,42 @@
+.top-bg {
+    background-image:url(../images/top_bg.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    min-width: 100vh;
+    min-height: 100vh;
+}
+
+.title-content {
+    width:80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.title-content img {
+    width:80%;
+}
+.command {
+    width:80%;
+    margin: 0 auto;
+}
+.command ul {
+    background:#000;
+    border: 2px solid #fff; 
+    padding: 15px 0;
+    width: 30%;
+    margin: 0 auto;
+}
+.command ul li{
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    padding: 5px 0;
+}
+.command ul li a{
+    color: #fff;
+    font-family: PixelMplus10,sans-serif;
+}
+.command ul li :hover:before{
+    content:"▶︎";
+    padding-right: 10px;
+}
