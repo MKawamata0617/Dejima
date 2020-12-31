@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\BookController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,4 +28,11 @@ Auth::id();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'welcome'])->name('home');
 
-Route::resource('book', BookController::class);
+Route::get('/continue', function () {
+    return view('layouts.book.book');
+});
+
+Route::group(['prefix' => 'books', 'name' => 'book.'], function () {     
+    // Route::get('/', [UserController::class, 'index'])->name('index');    
+    Route::get('/{book}', [BookController::class, 'show'])->name('show'); 
+});

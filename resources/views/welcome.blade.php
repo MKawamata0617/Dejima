@@ -42,7 +42,7 @@
         <div class="command">
             <ul>
                 <li class="start"><a href="{{ route('register') }}">冒険をはじめる</a></li>
-                <li class="continue"><a href="{{ route('book') }}">つづきから</a></li>
+                <li class="continue"><a href="{{ route('users.edit', ['id' => $user->id]) }}">つづきから</a></li>
             </ul>
         </div>
     

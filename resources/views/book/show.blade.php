@@ -34,7 +34,7 @@
                 <td>{{ $weapon }}</td>
             </div>
             <div class="contents">必殺技：
-            <td>{{ $technique }}</td>
+                <td>{{ $technique }}</td>
             </div>
         </div>
     </div>

@@ -7,7 +7,13 @@ use App\Http\Controllers\BookController;
 
 class BookController extends Controller
 {
-    public function test(){
-        return view('layouts/book');
+    public function show(){
+        $mail = 'test.gmail';
+        $name = 'test.name';
+        $sex = 'test.sex';
+        $job = 'test.job';
+        $weapon = 'test. weapon';
+        $technique = 'test.technique';
+        return view('book/show', compact(['mail', 'name', 'sex', 'job', 'weapon', 'technique']));
     }
 }
