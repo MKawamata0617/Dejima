@@ -33,6 +33,6 @@ Route::get('/continue', function () {
 });
 
 Route::group(['prefix' => 'books', 'name' => 'book.'], function () {     
-    // Route::get('/', [UserController::class, 'index'])->name('index');    
+    Route::get('/', [BookController::class, 'index'])->name('index');    
     Route::get('/{book}', [BookController::class, 'show'])->name('show'); 
 });

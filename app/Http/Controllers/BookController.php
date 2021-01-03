@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\BookController;
+use App\Models\Book;
 
 class BookController extends Controller
 {
@@ -15,5 +16,11 @@ class BookController extends Controller
         $weapon = 'test. weapon';
         $technique = 'test.technique';
         return view('book/show', compact(['mail', 'name', 'sex', 'job', 'weapon', 'technique']));
+    }
+
+    public function index(){
+        $books = Book::all();
+        return view('book/book', compact(['books']));
+
     }
 }
