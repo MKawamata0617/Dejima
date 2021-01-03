@@ -25,7 +25,7 @@
                 <td>{{ $name }}</td>
             </div>
             <div class="contents">性別：
-                <td>{{ $sex }}</td></div>
+                <td>{{ $sex }}</td>
             </div>
             <div class="contents">職業：
                 <td>{{ $job }}</td>
