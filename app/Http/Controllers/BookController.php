@@ -23,4 +23,9 @@ class BookController extends Controller
         return view('book/book', compact(['books']));
 
     }
+
+    public function create(){
+        dd(1);
+        return view("book.create");
+    }
 }

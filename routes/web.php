@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 
 use Illuminate\Support\Facades\Route;
 
@@ -34,5 +34,10 @@ Route::get('/continue', function () {
 
 Route::group(['prefix' => 'books', 'name' => 'book.'], function () {     
     Route::get('/', [BookController::class, 'index'])->name('index');    
-    Route::get('/{book}', [BookController::class, 'show'])->name('show'); 
-});
+    Route::get('/{book}', [BookController::class, 'show'])->name
+    ('show')->where("book", "[0-9]+");
+
+    Route::get('/create', [BookController::class, 'create'])->name('books.create');
+    Route::post("/create", [BookController::class, "update"])->name("books.create.exec");
+
+}); 
